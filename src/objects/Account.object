@@ -76,6 +76,18 @@
     <enableFeeds>true</enableFeeds>
     <enableHistory>false</enableHistory>
     <fields>
+        <fullName>A_Text_Field__c</fullName>
+        <description>Description</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Help</inlineHelpText>
+        <label>A Text Field</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>AccountSource</fullName>
         <picklist>
             <picklistValues>
