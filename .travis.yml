@@ -1,6 +1,11 @@
 language: java
+branches:
+  only:
+    - master
 env:
   global:
   - secure: LcMCofvOyk7BoNrhK7LMCW7N9JH7cJ2cM9ASzVmAmQUJiMLLnwbCQqaIIop2AYkZbXzyyK2il2iiOsz3uwLftTOYX71ajO1x7KGsZx499QTmkWvYcgUo0nNVrt+Vw58Ote8p5KbMae/7AIEdBKaVQZoKbry8TlrAoBDoJcgGE34=
   - secure: RM9dfDP+VX5Qc7mUXfmyaA9n0Num2PzC0ZUeIRVGJmNlhANJZwigUV1leUIG4v/yfGxFSAOp3UJSopc/9QCQiA5lZhPaeK18yp0hMRc7pgNEEHlA3ONGMi96ILHmolQtosxrixMpqPw1XV1GcX7KuEfbfJQg8h9P3MHMg9IyLHU=
-script: ant -lib lib/ant-salesforce.jar -Dsf.username=${SFUSER} -Dsf.password=${SFPWD} deployRunNoTests
+script: 
+  - '[ "${TRAVIS_PULL_REQUEST}" = "false" ] ant -lib lib/ant-salesforce.jar -Dsf.username=${SFUSER} -Dsf.password=${SFPWD} deployRunNoTests || false'
+  - '[ "${TRAVIS_PULL_REQUEST}" = "true" ] ant -lib lib/ant-salesforce.jar -Dsf.username=${SFUSER} -Dsf.password=${SFPWD} deployRunNoTests || false'

@@ -23,4 +23,15 @@
         maxPoll="${sf.maxPoll}" />
     </target>
 
+    <target name="validateNoTests">
+      <sf:deploy username="${sf.username}" 
+        password="${sf.password}" 
+        serverurl="${sf.serverurl}" 
+        runAllTests="false"
+        logType="Detail"
+        deployRoot="src"
+        maxPoll="${sf.maxPoll}"
+        checkOnly="true" />
+    </target>   
+
 </project>
