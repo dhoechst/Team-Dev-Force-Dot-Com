@@ -1,0 +1,26 @@
+<project name="team-dev" default="deployRunNoTests" basedir="." xmlns:sf="antlib:com.salesforce">
+
+    <property file="build.properties"/>
+    <property environment="env"/>
+
+    <target name="deployRunAllTests">
+      <sf:deploy username="${sf.username}" 
+        password="${sf.password}" 
+        serverurl="${sf.serverurl}" 
+        runAllTests="true"
+        logType="Detail"
+        deployRoot="src"
+        maxPoll="${sf.maxPoll}" />
+    </target>
+
+    <target name="deployRunNoTests">
+      <sf:deploy username="${sf.username}" 
+        password="${sf.password}" 
+        serverurl="${sf.serverurl}" 
+        runAllTests="false"
+        logType="Detail"
+        deployRoot="src"
+        maxPoll="${sf.maxPoll}" />
+    </target>
+
+</project>
