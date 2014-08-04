@@ -8,4 +8,4 @@ env:
   - secure: RM9dfDP+VX5Qc7mUXfmyaA9n0Num2PzC0ZUeIRVGJmNlhANJZwigUV1leUIG4v/yfGxFSAOp3UJSopc/9QCQiA5lZhPaeK18yp0hMRc7pgNEEHlA3ONGMi96ILHmolQtosxrixMpqPw1XV1GcX7KuEfbfJQg8h9P3MHMg9IyLHU=
 script: 
   - '[ "${TRAVIS_PULL_REQUEST}" = "false" ] && ant -lib lib/ant-salesforce.jar -Dsf.username=${SFUSER} -Dsf.password=${SFPWD} deployRunNoTests || false'
-  - '[ "${TRAVIS_PULL_REQUEST}" != "false" ] && ant -lib lib/ant-salesforce.jar -Dsf.username=${SFUSER} -Dsf.password=${SFPWD} validateNoTests' || true'
+  - '[ "${TRAVIS_PULL_REQUEST}" != "false" ] && ant -lib lib/ant-salesforce.jar -Dsf.username=${SFUSER} -Dsf.password=${SFPWD} validateNoTests || true'
