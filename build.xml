@@ -24,6 +24,7 @@
     </target>
 
     <target name="validateNoTests">
+      <echo message="Hello, world"/>
       <sf:deploy username="${sf.username}" 
         password="${sf.password}" 
         serverurl="${sf.serverurl}" 
