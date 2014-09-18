@@ -24,7 +24,7 @@
     </target>
 
     <target name="validateNoTests">
-      <echo message="Hello, world"/>
+      <echo message="Pull Request Number ${pullrequest}"/>
       <sf:deploy username="${sf.username}" 
         password="${sf.password}" 
         serverurl="${sf.serverurl}" 
