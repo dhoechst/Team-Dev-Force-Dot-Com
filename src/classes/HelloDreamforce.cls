@@ -1,6 +1,7 @@
 public with sharing class HelloDreamforce {
 	public HelloDreamforce() {
 		//implementation of new feature
+		// another implementation
 	}
 
 	public String sayHello(String name) {
