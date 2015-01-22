@@ -6,6 +6,8 @@ public with sharing class HelloDreamforce {
 		// this is DF14
 
 		// feature implementation
+
+		// add really cool feature for issue 15
 	}
 
 	public String sayHello(String name) {
