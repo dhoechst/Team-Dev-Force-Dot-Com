@@ -5,7 +5,7 @@ branches:
     - master
 env:
   global:
-  - secure: "WXG7TH0oswkEzJfk9L566rq/iPzVg+iqBVogjOjcs0ZeXk4oofZ8r91aRSYHP2Ee7xmQuDhDkyWMKMutcBdRoC+7+pNfkTanc2YyFpNAY4w1TqQp59d2qK0zTu8g6oWrGj82VXnrDyErb3cLN7xiwN9RVqCexV0obhHGFtNhvjA="
+  - secure: "M6Dahzp1tLCdgwOSH4M84rY9++tVuRCYeYX7XqJDr7HcOJTeQmxAEW2RRaUDhjrzXoodTG/X5XYm0cs0TSsrvKg0lULfB3cyG7v4uwFXE2QuDtpJdAEsssMtobmBL8evUcGIhsNhpQIghEhc6B34gXKL7r9kSDahSBZCblIQN1o="
   - secure: "OYig3UxORxM8v5UdmljoY3to9RyJ/170ZA1btx2ZXExUkpO291V70xozM4NjRJawWSF2bGlhUM+ZtK7yCiefT5K+pAN/n7pnQnaVgcQGS5yn8SSi57l76qApY61QoCghjSIK5lsNhu01/LodWQPt4pt6SF/ZEXeaYwTuEyKzja4="
 script: 
   - '[ "${TRAVIS_PULL_REQUEST}" = "false" ] && ant -lib lib/ant-salesforce.jar -Dsf.username=${SFUSER} -Dsf.password=${SFPWD} deployRunNoTests || [ "${TRAVIS_PULL_REQUEST}" != "false" ]'
