@@ -8,6 +8,7 @@ public with sharing class HelloDreamforce {
 		// feature implementation
 
 		// add really cool feature for issue 15
+		// change
 	}
 
 	public String sayHello(String name) {
