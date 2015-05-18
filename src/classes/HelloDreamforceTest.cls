@@ -2,11 +2,8 @@
 private class HelloDreamforceTest {
 	
 	@isTest static void test_method_one() {
-		// Implement test code
-	}
-	
-	@isTest static void test_method_two() {
-		// Implement test code
+		HelloDreamforce hd = new HelloDreamforce();
+		System.assertEquals('Hello Bob!', hd.sayHello('Bob'));
 	}
 	
 }
