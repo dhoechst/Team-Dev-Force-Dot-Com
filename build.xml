@@ -32,6 +32,14 @@
         deployRoot="src"
         maxPoll="${sf.maxPoll}"
         checkOnly="true" />
-    </target>   
+    </target> 
+
+    <target name="delete">
+        <sf:deploy username="${sf.username}" 
+        password="${sf.password}" 
+        serverurl="${sf.serverurl}"
+        deployRoot="delete"
+        maxPoll="${sf.maxPoll}" />
+    </target>  
 
 </project>
