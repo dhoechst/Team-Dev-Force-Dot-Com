@@ -1,6 +1,6 @@
 Team-Dev-Force-Dot-Com
 ======================
 
-[![Build Status](https://travis-ci.org/dhoechst/Team-Dev-Force-Dot-Com.svg?branch=master)](https://travis-ci.org/dhoechst/Team-Dev-Force-Dot-Com)
+[![Build Status](https://snap-ci.com/dhoechst/Team-Dev-Force-Dot-Com/branch/master/build_image)](https://snap-ci.com/dhoechst/Team-Dev-Force-Dot-Com/branch/master)
 
-Demo repository for Dreamforce 14 presentation
+Demo repository for CI presentation
