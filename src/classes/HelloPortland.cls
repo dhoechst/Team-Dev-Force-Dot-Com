@@ -3,9 +3,9 @@ public with sharing class HelloPortland {
 		return String.format('Hello {0} !', new List<String> {name});
 	}
 
-	public static void Bad_Thing(Integer i) {
+	public static void badThing(Integer i) {
 		for (Integer j=1; j<i; j++) {
-			StupidUtil.doInsert('Account ' + j);
+			insert new Account(Name = 'New Account ' + i);
 		}
 	}
 }
