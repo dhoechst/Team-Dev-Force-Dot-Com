@@ -1,7 +1,7 @@
 @isTest
 private class HelloDreamforceTest {
 	
-	@isTest static void test_method_one() {
+	@isTest static void testSayHello() {
 		HelloDreamforce hd = new HelloDreamforce();
 		System.assertEquals('Hello Bob!', hd.sayHello('Bob'));
 	}
