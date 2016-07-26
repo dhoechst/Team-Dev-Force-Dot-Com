@@ -5,7 +5,7 @@ public with sharing class HelloPortland {
 
 	public static void Bad_Thing(Integer i) {
 		for (Integer j=1; j<i; j++) {
-			insert new Account(Name = 'New Account ' + i);
+			StupidUtil.doInsert('Account ' + j);
 		}
 	}
 }
